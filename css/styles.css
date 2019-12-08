@@ -1,0 +1,17 @@
+.main {
+  width: 600px;
+  margin: 10px auto;
+}
+
+.home-work__table {
+  border-collapse: collapse;
+  border: 1px solid #202020;
+}
+
+.home-work__table td, th {
+  border: 1px solid #202020;
+}
+
+.home-work__table td {
+  padding: 5px;
+}

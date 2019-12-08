@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://kit.fontawesome.com/77b56d22ec.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+<h1>Form 1</h1>
+<div class="container form">
+  <form action="#" class="registration_form" id="registration_form">
+    <div class="data-column personal-data">
+      <h3>1. Личные данные</h3>
+      <div class="row">
+        <div class="column-left">
+          <label for="gender">Обращение*</label>
+        </div>
+        <div class="column-right" id="gender">
+          <label>Господин<input type="radio" name="gender" id="mr" checked></label>
+          <label>Госпожа<input type="radio" name="gender" id="mrs"></label>
+          <i class="fas fa-check hidden"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="rank">Звание</label>
+        </div>
+        <div class="column-right">
+          <input type="text" name="rank" id="rank">
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="fname">Имя*</label>
+        </div>
+        <div class="column-right">
+          <input type="text" name="fname" id="fname" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="lname">Фамилия*</label>
+        </div>
+        <div class="column-right">
+          <input type="text" name="lname" id="lname" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="address-street">Улица*</label>
+        </div>
+        <div class="column-right">
+          <input type="text" name="address-street" id="address-street" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="address-index">Индекс\город*</label>
+        </div>
+        <div class="column-right">
+          <input type="text" name="address-index_city" id="address-index" size="7" maxlength="10" required>
+          <input type="text" name="address-index_city" id="address-city" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="country">Страна*</label>
+        </div>
+        <div class="column-right">
+          <select name="country" id="country" required>
+            <option value="austria">Австрия</option>
+            <option value="germany">Германия</option>
+            <option value="zimbabwe">Зимбабве</option>
+            <option value="ukraine">Украина</option>
+          </select>
+          <i class="fas fa-check hidden green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="currency">Валюта*</label>
+        </div>
+        <div class="column-right">
+          <select name="currency" id="currency">
+            <option value="usd">Американский доллар (UDS)</option>
+            <option value="uan">Гривна (UAN)</option>
+            <option value="eur">Евро (EUR)</option>
+            <option value="all">Лек (ALL)</option>
+          </select>
+          <i class="fas fa-check hidden"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="bday">Дата рождения*</label>
+        </div>
+        <div class="column-right">
+          <input type="date" name="bday" id="bday" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="email">E-mail*</label>
+        </div>
+        <div class="column-right">
+          <input type="email" name="email" id="email" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="phone-country">Мобильный телефон</label>
+        </div>
+        <div class="column-right">
+          <select name="m-phone-country" class="phone-country" id="m-phone-country">
+            <option value="austria">+1</option>
+            <option value="germany">+49</option>
+            <option value="zimbabwe">+263</option>
+            <option value="ukraine">+380</option>
+          </select>
+          <input type="text" name="m-phone-code" class="phone-code" id="m-phone-code">
+          <input type="text" name="m-phone-number" class="phone-number" id="m-phone-number">
+          <i class="fas fa-check grey"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="phone-country">Телефон</label>
+        </div>
+        <div class="column-right">
+          <select name="phone-country" class="phone-country" id="phone-country">
+            <option value="austria">+1</option>
+            <option value="germany">+49</option>
+            <option value="zimbabwe">+263</option>
+            <option value="ukraine">+380</option>
+          </select>
+          <input type="text" name="phone-code" class="phone-code" id="phone-code">
+          <input type="text" name="phone-number" class="phone-number" id="phone-number">
+          <i class="fas fa-check grey"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-column login-data">
+      <h3>2. Данные доступа</h3>
+      <div class="row">
+        <div class="column-left">
+          <label for="password">Пароль</label>
+        </div>
+        <div class="column-right">
+          <input type="password" name="password" id="password" minlength="8" maxlength="20" required  >
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+        </div>
+        <div class="column-right">
+          <p class="password-tip">(8-20 символов : цифры и буквы)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="pass-strength-meter">Надёжность пароля</label>
+        </div>
+        <div class="column-right">
+          <meter max="10" low="3" high="8" optimum="5" value="2" id="pass-strength-meter"></meter>
+          <i class="fas fa-check green hidden"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="confirm-password">Введите пароль ещё раз*</label>
+        </div>
+        <div class="column-right">
+          <input type="password" name="confirm-password" id="confirm-password" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="secret-question">Контрольный вопрос*</label>
+        </div>
+        <div class="column-right">
+          <select name="secret-question" id="secret-question">
+            <option value="secret-question-1">Название вашего первого авто</option>
+            <option value="secret-question-2">Первая прочитанная книга</option>
+            <option value="secret-question-3">Год вызова первого демона</option>
+          </select>
+          <i class="fas fa-check hidden"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left">
+          <label for="secret-answer">Ваш ответ*</label>
+        </div>
+        <div class="column-right">
+          <input type="text" name="secret-answer" id="secret-answer" required>
+          <i class="fas fa-check green"></i>
+        </div>
+      </div>
+      <div class="agreement">
+        <input type="checkbox" name="agreement" class="agreement-checkbox" id="agreement">
+        <p class="agreement-text">Я принимаю <a href="#">Общие условия и положения</a> и <a href="#">Политику
+          конфиденциальности</a>. Мне уже исполнилось 18 лет, и я даю своё согласие на отправку мне рекламы и информации
+          о продуктах компанией bet-at-home.com. Я могу в любое время отказаться от своего согласия на получение рекламы
+          и информации о продуктах компании в настройках своего счёта.</p>
+      </div>
+    </div>
+  </form>
+  <button class="btn btn__submit" form="registration_form" type="submit" value="Submit">Зарегистрироваться прямо сейчас! ▶</button>
+</div>
+</body>
+</html>

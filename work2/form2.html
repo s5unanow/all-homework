@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cherevach - Form2</title>
+  <link rel="stylesheet" href="css/styles3.css">
+</head>
+<body>
+<h1 class="form_head">Form 2</h1>
+<div class="container invitation">
+  <h1>Gala Event</h1>
+  <p>This form allows you to purchase a ticket to our gala event, for yourself and a guest.</p>
+  <hr>
+  <h2>Your contact information</h2>
+  <form action="#" id="contact-information">
+    <h3>Name</h3>
+    <label class="name" data-descr="First Name"><input type="text" name="fname" id="fname" required></label>
+    <label class="name" data-descr="Last Name"><input type="text" name="lname" id="lname" required></label>
+    <h3>Email</h3>
+    <input type="email" name="email" id="email" placeholder="email@example.com" required>
+    <h3>Your meal preference <span class="asterisk">*</span></h3>
+    <p>For your guests, please include their meal preference in the open text box.</p>
+    <label><input type="radio" name="meal" id="meal-chicken" required>Chicken</label>
+    <label><input type="radio" name="meal" id="meal-fish">Fish</label>
+    <label><input type="radio" name="meal" id="meal-vegetarian">Vegetarian</label>
+    <hr>
+    <h2>Ticket purchase</h2>
+    <h3>Tickets <span class="asterisk">*</span></h3>
+    <label><input type="radio" name="ticket-amount" id="ticket-amount-self" checked>$100 - Myself</label>
+    <label><input type="radio" name="ticket-amount" id="ticket-amount-plus-guest">$200 - Myself + guest</label>
+    <hr>
+    <button type="submit">Enter payment information</button>
+  </form>
+</div>
+</body>
+</html>
