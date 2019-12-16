@@ -1,0 +1,72 @@
+:root {
+  --odd-line: linear-gradient(to right, white 50px, black 50px);
+  --ol: repeating-linear-gradient(to right, white 50px, black 50px);
+  /*background: linear-gradient(white 12.5%, black 25%);*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.borders-outer {
+  width: 464px;
+  height: 464px;
+  border: 2px solid black;
+}
+
+.inscription-column,
+.table,
+.inscription-row__symbol,
+.inscription-row__space {
+  display: inline-block;
+}
+
+/*.inscription-row {*/
+/*  width: 460px;*/
+/*  height: 30px;*/
+/*}*/
+
+.inscription-row {
+  text-align: center;
+}
+
+.inscription-row__symbol {
+  width: 40px;
+}
+
+.inscription-left {
+  margin: auto 5px auto 11px;
+}
+
+.inscription-right {
+  margin: auto 9px auto 5px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.borders-inner {
+  width: 404px;
+  height: 404px;
+  border: 2px solid black;
+}
+
+.table__line-odd {
+  width: 400px;
+  height: 50px;
+  background: repeating-linear-gradient(to right, white, white 50px, black 1px, black 100px);
+}
+
+.table__line-even {
+  width: 400px;
+  height: 50px;
+  background: repeating-linear-gradient(to right, black, black 50px, white 1px, white 100px);
+}
