@@ -36,10 +36,6 @@ h1 {
   display: inline-block;
 }
 
-/*.inscription-row {*/
-/*  width: 460px;*/
-/*  height: 30px;*/
-/*}*/
 .middle-row {
   height: 410px;
 }
@@ -49,9 +45,7 @@ h1 {
 }
 
 .inscription-top {
-  /*margin-top: 8px;*/
-  /*margin-bot: 4px;*/
-  margin: 5px auto;
+  margin: 6px auto 3px auto;
   transform: rotate(180deg);
 }
 
@@ -65,17 +59,13 @@ h1 {
 }
 
 .inscription-right {
-  margin: auto 9px auto 5px;
+  margin: auto 10px auto 6px;
   transform: translateY(-53px) rotate(180deg);
 }
 
 .inscription-column__symbol {
   height: 50px;
 }
-
-/*.rotated {*/
-/*  transform: rotate(180deg);*/
-/*}*/
 
 .borders-inner {
   width: 404px;
